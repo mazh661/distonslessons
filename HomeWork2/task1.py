@@ -6,8 +6,8 @@ for i in  range(4):
     a, b = input().split()
     c = int(a)
     d = int(b)
-    sum1 = c + c
-    sum2 = d + d
+    sum1 = sum1 + c
+    sum2 = sum2 + d
 
 if sum1 > sum2:
     print("1")
