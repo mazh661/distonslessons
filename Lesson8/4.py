@@ -19,4 +19,8 @@ for i in students:
     for j in range(n):
         if maxi<marks[j]:
             maxi = marks[j]
+    i['mark']=maxi
     print(maxi)
+
+for i in students:
+    print(i)
