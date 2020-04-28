@@ -12,11 +12,15 @@ sql = "select * from products"
 cursor.execute(sql)
 data = cursor.fetchall()
 
-max_price=data[0][2]
+for i in data:
+    print(i)
+
 index=0
+max_price=data[0][2]
 for i in data:
     if max_price<i[2]:
         max_price=i[2]
+        index=i
     
-print(max_price)
+print(max_price, index)
 

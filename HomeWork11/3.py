@@ -7,7 +7,7 @@ for i in range(len(data)):
     employee = data[i]
     if employee[employee_key]==employee_id:
         employee_index.append(i)
-        del employee
+        
 
 for i in employee_index:
     print(i)
