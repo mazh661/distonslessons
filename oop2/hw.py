@@ -1,0 +1,26 @@
+from dog import Dog
+d1 = Dog("d1",10)
+d2 = Dog("d2",12)
+d1.setName("Aktos")
+d2.setName("Tuzik")
+name = d1.getName()
+name2 = d2.getName()
+
+d1.setAge(10)
+d2.setAge(12)
+age = d1.getAge()
+age2 = d2.getAge()
+print(name,age)
+print(name2,age2)
+print(d1)
+print(d2)
+
+from person2 import Person
+p1 = Person("p1",21,d1)
+dog_name = p1.getDogName()
+dog_age = p1.getDogAge()
+p2 = Person("p2",24,d2)
+dog_name2 = p2.getDogName()
+dog_age2 = p2.getDogAge()
+print(dog_name, dog_age)
+print(dog_name2, dog_age2)
